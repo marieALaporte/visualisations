@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bioversity dataverse</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/d3/d3.min.js"></script>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<script type="text/javascript" src="js/bar.js"></script>
+		<link href="css/bar.css" rel="stylesheet" type="text/css" />
+
+
+		<script>
+		    $(document).ready(
+		            function() {
+		                printBar("data/author.json", '#author');
+		                printBar("data/affiliation.json", '#affiliation');
+		                printBar("data/subject.json", '#subject');
+		                printBar("data/keyword.json", '#keyword');
+		                printBar("data/contributor.json", '#contributor');
+		                printBar("data/crp.json", '#crp');
+		                printBar("data/geo.json", '#geo');
+		                printBar("data/fileType.json", '#fileType');
+		            });
+		</script>
+
+	</head>
+	<body>
+		<h1>Bioversity dataverse</h1>
+		<div id="main">
+			<div id="author">
+				<h3>Authors</h3>
+			</div>
+			<div id="affiliation">
+				<h3>Affiliations</h3>
+			</div>
+			<div id="subject">
+				<h3>Subjects</h3>
+			</div>
+			<div id="keyword">
+				<h3>Keywords</h3>
+			</div>
+			<div id="contributor">
+				<h3>Contributors</h3>
+			</div>
+			<div id="crp">
+				<h3>CRPs</h3>
+			</div>
+			<div id="geo">
+				<h3>Geographic Coverage</h3>
+			</div>
+			<div id="fileType">
+				<h3>File Types</h3>
+			</div>
+		</div>
+		
+	</body>
+</html>
