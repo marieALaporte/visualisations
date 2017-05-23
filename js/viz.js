@@ -5,8 +5,8 @@ function printGraph(){
     const nodes = graph.nodes;
     const links = graph.links;
 
-    const width = 4000;
-    const height = 2000;
+    const width = 960;
+    const height = 800;
 
     // separation between same-color circles
     const padding = 9; // 1.5
