@@ -98,7 +98,7 @@ function printGraph(){
           .on("end", dragended)
         )
         .on("mouseover", function(d) {
-              tooltip.text(d.name + ": " + d.r);
+              tooltip.text(d.name);
               tooltip.style("visibility", "visible");
         })
         .on("mousemove", function() {
