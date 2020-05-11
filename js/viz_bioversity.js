@@ -1,5 +1,5 @@
 /* global d3 */
-function printGraph(){
+function printGraphBioversity(){
   d3.json('data/graph_bioversity-May2020.json', (error, graph) => {
     console.log('graph', graph);
     const nodes = graph.nodes;
